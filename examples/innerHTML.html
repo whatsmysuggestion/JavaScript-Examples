@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script language="javascript">
+		function display()
+		{
+a=parseFloat(document.getElementsByTagName("input")[0].value);	
+b=parseFloat(document.getElementsByTagName("input")[1].value);
+c=a+b;
+//document.write("<h1><center>SUM="+c+"</center></h1>");
+document.getElementById("dd").innerHTML="<h1><center>SUM="+c+"</center></h1>";	
+	}
+		</script>	
+</head>
+<body> 
+	<center>
+	<input type="text" name="t1"/><br>
+	<input type="text" name="t1"/><br>
+	<input type="button" value="First Button" onClick="display()"/></br>	
+	<div id="dd"></div>
+		</center>
+</body>
+</html>

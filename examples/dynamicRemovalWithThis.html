@@ -1,0 +1,53 @@
+<html>
+<head>
+	<script language="javascript">
+	i=0;
+		function display()
+		{
+		 a=document.getElementById("dd");
+		 
+		 b=document.createElement("input");
+		 b.setAttribute("type","text");
+		 b.setAttribute("id","t"+i);
+		 
+ 
+		 d=document.createElement("input");
+		 d.setAttribute("type","button");
+		 d.setAttribute("value","Remove");
+		 d.setAttribute("onclick","removeElement(this.id)");
+		 d.setAttribute("id","c"+i);
+		 
+		 
+		 i++;
+		a.appendChild(b);
+		a.appendChild(d);		
+	 	}		
+		
+		function removeElement(iddata) //c100
+		{
+	 
+a=document.getElementById("dd");	
+
+
+	 
+b=document.getElementById("t"+iddata.substring(1,iddata.length));
+d=document.getElementById("c"+iddata.substring(1,iddata.length));
+		 
+		 a.removeChild(b);
+		 a.removeChild(d);
+		 
+		 
+	 	}
+		</script>	
+</head>
+<body>
+
+<div id="dd"></div><br>
+
+ <input type="button" value="Add" onClick="display()"/></br>
+ 
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script language="javascript">
+		function display()
+		{
+		 a=document.getElementById("dd");
+	 //<input type=file value=clickme id=t1/>
+		 b=document.createElement("input");
+		 b.setAttribute("type","text");
+		 b.setAttribute("value","clickme")
+		 b.setAttribute("id","t1"); 		 
+		 a.appendChild(b);
+		 
+	 	}
+		</script>	
+</head>
+<body>
+<div id="dd"></div><br>
+ <input type="button" value="+"  onClick="display()"/>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+	<script language="javascript">
+	 a="img/a.png";
+	 b="img/b.png";
+		
+		function display()
+		{	
+	 
+		document.getElementById("dd").src=a;
+		document.getElementById("dd1").src=b;
+		 
+	 		temp=a;
+			a=b;
+			b=temp;
+			
+			
+		}			
+		</script>	
+</head>
+
+
+
+<body> 
+	 	 <center>
+<img src="" width="200"  height="200" id="dd"/>
+<img src="" width="200"  height="200" id="dd1"/>
+
+<input type="button" value="clickme" onClick="display()"/>
+
+
+	 </center>
+	 
+	 
+	 	 </body>
+</html>

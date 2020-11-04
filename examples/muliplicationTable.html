@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script language="javascript">
+		function display()
+		{
+a=parseFloat(document.getElementById("t1").value);	
+ 
+str="<table border=1>";
+
+ for(i=1;i<=10;i++)
+ {
+  str=str+"<tr><td bgcolor=red>"+a+"</td><td bgcolor=green>*</td><td bgcolor=yellow>"+i+"</td><td bgcolor=orange>=</td><td bgcolor=cyan>"+(a*i)+"</td></tr>";
+  } 
+ str=str+"</table>";
+ 
+ document.getElementById("dd").innerHTML=str;
+ 	
+		}
+		</script>	</head><body> 
+	<input type="text" id="t1"/><br> 
+	<input type="button" value="First Button" onClick="display()"/></br>
+	<div id="dd"></div>
+</body>
+
+</html>

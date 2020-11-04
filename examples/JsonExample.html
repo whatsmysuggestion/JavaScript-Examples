@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script language="javascript">
+		function display()
+		{
+			a='[{"name":"arif","age":25},{"name":"ranga","age":27}]';
+			b=JSON.parse(a);
+			for(i=0;i<b.length;i++)
+		  document.write(b[i].name+" "+b[i].age+"<br>");
+	
+	      }
+			
+		</script>	
+</head>
+<body> 
+
+	 <input type="button" value="click" onClick="display()"/>
+	 
+	 </body>
+
+</html>

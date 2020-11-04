@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script language="javascript">
+			function display()
+			{
+	a=parseFloat(document.frm.t1.value);	
+	b=parseFloat(document.frm.t2.value);
+	c=a+b;
+	document.frm.t3.value=c;		
+			}
+			</script>	
+	</head>
+	<body>
+		<form name="frm">
+			<input type="text" name="t1" /><br>
+			<input type="text" name="t2"/><br>
+			<input type="text" name="t3"/><br>
+			<input type="button" value="First Button" onClick="display()"/>
+		</form>
+	</body>
+</html>

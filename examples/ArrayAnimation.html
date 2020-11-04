@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script language="javascript">
+	 a=new Array('a.png','b.png','c.png','e.png','f.png','g.png');	 
+	 i=0;	 
+		
+		
+		function display()
+		{
+		
+		
+		if(i==a.length-1)
+		i=0;
+		else
+		i=i+1;	
+		
+		document.getElementById("dd").src="img\\"+a[i];
+		setTimeout("display()",2000);		
+		}			
+		</script>	
+</head>
+
+
+
+<body onLoad="display()"> 
+	 	 <center>
+<img src="img\a.png" width="200"  height="200" id="dd"/>
+	 </center>
+	 
+	 
+	 	 </body>
+</html>
